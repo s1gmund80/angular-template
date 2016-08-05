@@ -1,0 +1,19 @@
+<h2>Sono nel dettaglio video</h2>
+
+<p>{{message}}</p>
+
+Title: {{d.title}}<br/>
+Desc: {{d.description}}<br/>
+Categoria: {{d.categoria.nome}}<br/>
+<br/>
+<a ng-click="public.chiedi()" href="">Fai qualcosa</a>
+<br/>
+<a ng-click="public.oppure()" href="">Fai qualcosa in privato</a>
+<br/>
+<a href="/video/delete/{{d.objectId}}">Cancella</a>
+
+<br/><br/><br/>
+
+<div>>
+    <a href="/list">Back to videos</a><br/>
+</div>

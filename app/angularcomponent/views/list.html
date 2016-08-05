@@ -1,0 +1,30 @@
+<h2>Here all my videos</h2>
+
+<p>{{message}}</p>
+
+<!--
+<ul>
+  <li ng-repeat="d in data"><a href="/video/{{d.objectId}}">{{d.title}}</a> ({{d.description}}) [{{d.categoria.nome}}]</li>
+</ul>
+-->
+<!--
+          <div ng-repeat="d in data" class="item">
+                <div class="animate-box">
+                    <a href="images/img_8.jpg" class="image-popup fh5co-board-img"><img src="images/img_8.jpg" alt="Free HTML5 Bootstrap template"></a>
+                    <div class="fh5co-desc"> 
+                        <a href="/video/{{d.objectId}}" title="{{d.title}}">{{d.title}}</a> ({{d.description}}) - [{{d.categoria.nome}}]
+                    </div>
+                </div>    
+          </div>  
+-->
+
+   <div class="row">
+      <div id="fh5co-board" data-columns>
+            <div class="item" ng-repeat="d in data" ng-click="public.detail(d.objectId)">
+            <!--<div class="animate-box">
+                <img src="/images/img_1.jpg" alt="Free HTML5 Bootstrap template" />
+            </div>-->
+            <div class="fh5co-desc"><a href="/video/{{d.objectId}}" title="{{d.title}}">{{d.title}}</a> ({{d.description}}) - [{{d.categoria.nome}}]</div>
+            </div>
+      </div>
+   </div>
